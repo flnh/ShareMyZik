@@ -11,6 +11,10 @@ body {
   background-color: #333333;
 }
 
+/* ----------------------------------------------------- */
+/* ------------------ PAGE PRINCIPALE ------------------ */
+/* ----------------------------------------------------- */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -39,27 +43,6 @@ header {
 
 #hamburger:checked ~ #blocMenu {
   transform: translate(0, 0);
-}
-
-#menu {
-  height: 100%;
-  width: 260px;
-  background-color: #333333;
-}
-
-#menuTop {
-  height: 60px;
-  background-color: #ED1C24;
-}
-
-#blocMenu {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(68, 68, 68, 0.8);
-  top: 0;
-  left: 0;
-  transform: translate(calc(-200vw), 0);
 }
 
 article {
@@ -97,4 +80,29 @@ section > div > div {
 
 section > div > div > p:nth-child(2) {
   margin-left: 40px;
+}
+
+/* ----------------------------------------------------- */
+/* ---------------------- MENU ------------------------- */
+/* ----------------------------------------------------- */
+
+#menu {
+  height: 100%;
+  width: 260px;
+  background-color: #333333;
+}
+
+#menuTop {
+  height: 60px;
+  background-color: #ED1C24;
+}
+
+#blocMenu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(68, 68, 68, 0.8);
+  top: 0;
+  left: 0;
+  transform: translate(calc(-200vw), 0);
 }
