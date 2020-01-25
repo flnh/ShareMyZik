@@ -11,6 +11,26 @@ body {
   background-color: #333333;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+label {
+  font-size: 22px;
+}
+
 /* ----------------------------------------------------- */
 /* ------------------ PAGE PRINCIPALE ------------------ */
 /* ----------------------------------------------------- */
@@ -58,6 +78,7 @@ article {
   height: 88px;
   background-color: #444444;
   margin: 0 7px;
+  margin-top: 6px;
   flex-shrink: 0;
 }
 
@@ -117,5 +138,44 @@ section > div > div > p:nth-child(2) {
   content: url("../svg/music.svg");
   width: 30px;
   height: 30px;
-  margin-right: 15px;
+  margin-right: 10px;
+  position: relative;
+  top: 7px;
+}
+
+#menuBot label {
+  display: block;
+  margin: 15px 5px;
+}
+
+#menuBot label::before {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+}
+
+#ajouter {
+  display: none;
+}
+
+#ajouter + label::before {
+  content: url('../svg/add.svg');
+}
+
+#categorie {
+  display: none;
+}
+
+#categorie + label::before {
+  content: url("../svg/library-music.svg");
+}
+
+#theme {
+  display: none;
+}
+
+#theme + label::before {
+  content: url("../svg/moon.svg");
 }
