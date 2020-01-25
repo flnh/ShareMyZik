@@ -1,7 +1,7 @@
 var hamburger = document.querySelector("#hamburger");
-var blocMenu = document.querySelector("#blocMenu");
+var fermerMenu = document.querySelector("#fermerMenu");
 
-blocMenu.addEventListener("click", function () {
+fermerMenu.addEventListener("click", function () {
   console.log("click");
   hamburger.checked = false;
 })

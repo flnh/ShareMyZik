@@ -113,6 +113,11 @@ section > div > div > p:nth-child(2) {
   background-color: #333333;
 }
 
+#fermerMenu {
+  height: 100%;
+  width: calc(100vw - 260px);
+}
+
 #menuTop {
   height: 60px;
   background-color: #ED1C24;
@@ -126,6 +131,7 @@ section > div > div > p:nth-child(2) {
   top: 0;
   left: 0;
   transform: translate(calc(-200vw), 0);
+  display: flex;
 }
 
 #logo {
