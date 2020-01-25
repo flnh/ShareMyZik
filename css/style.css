@@ -12,21 +12,76 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ED1C24;
   height: 40px;
+}
+
+#recherche {
+  width: 15px;
+  height: 15px;
+  background-image: url("../svg/search.svg");
+  margin-right: 20px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger + label {
+  margin-left: 20px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../svg/bars.svg");
+}
+
+#hamburger:checked ~ #blocMenu {
+  transform: translate(0, 0);
+}
+
+#menu {
+  height: 100%;
+  width: 260px;
+  background-color: #333333;
+}
+
+#menuTop {
+  height: 60px;
+  background-color: #ED1C24;
+}
+
+#blocMenu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(68, 68, 68, 0.8);
+  top: 0;
+  left: 0;
+  transform: translate(calc(-200vw), 0);
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  overflow: auto;
 }
 
 .img {
   width: 101px;
   height: 88px;
   background-color: #444444;
-  margin-right: 7px;
+  margin: 0 7px;
   flex-shrink: 0;
 }
 
 section {
   display: flex;
-  margin: 10px 5px;
+  margin: 10px;
+  height: 100px;
 }
 
 section > div {
