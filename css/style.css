@@ -106,3 +106,16 @@ section > div > div > p:nth-child(2) {
   left: 0;
   transform: translate(calc(-200vw), 0);
 }
+
+#logo {
+  text-align: center;
+  margin: 0;
+  padding-top: 7px;
+}
+
+#logo::before {
+  content: url("../svg/music.svg");
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
