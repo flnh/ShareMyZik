@@ -1,0 +1,11 @@
+<svg id="Icon_feather-sun" data-name="Icon feather-sun" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <path id="Tracé_1" data-name="Tracé 1" d="M25.5,18A7.5,7.5,0,1,1,18,10.5,7.5,7.5,0,0,1,25.5,18Z" transform="translate(-1.5 -1.5)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_2" data-name="Tracé 2" d="M18,1.5v3" transform="translate(-1.5)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_3" data-name="Tracé 3" d="M18,31.5v3" transform="translate(-1.5 -3)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_4" data-name="Tracé 4" d="M6.33,6.33,8.46,8.46" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_5" data-name="Tracé 5" d="M27.54,27.54l2.13,2.13" transform="translate(-3 -3)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_6" data-name="Tracé 6" d="M1.5,18h3" transform="translate(0 -1.5)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_7" data-name="Tracé 7" d="M31.5,18h3" transform="translate(-3 -1.5)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_8" data-name="Tracé 8" d="M6.33,29.67l2.13-2.13" transform="translate(0 -3)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path id="Tracé_9" data-name="Tracé 9" d="M27.54,8.46l2.13-2.13" transform="translate(-3)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

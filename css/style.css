@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #333333;
+}
+
+header {
+  background-color: #ED1C24;
+  height: 40px;
+}
+
+.img {
+  width: 101px;
+  height: 88px;
+  background-color: #444444;
+  margin-right: 7px;
+  flex-shrink: 0;
+}
+
+section {
+  display: flex;
+  margin: 10px 5px;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section > div > div {
+  display: flex;
+}
+
+section > div > div > p:nth-child(2) {
+  margin-left: 40px;
+}
