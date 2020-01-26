@@ -44,9 +44,12 @@ header {
 }
 
 #recherche {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   background-image: url("../svg/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
   margin-right: 20px;
 }
 
@@ -56,9 +59,12 @@ header {
 
 #hamburger + label {
   margin-left: 20px;
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   background-image: url("../svg/bars.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
 }
 
 #hamburger:checked ~ #blocMenu {
