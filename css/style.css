@@ -138,6 +138,7 @@ section > div > div > p:nth-child(2) {
   left: 0;
   transform: translate(calc(-200vw), 0);
   display: flex;
+  transition: transform 1s ease-in-out;
 }
 
 #logo {
