@@ -154,11 +154,11 @@ section > div > div > p:nth-child(2) {
   display: flex;
 }
 
-#blocMenu .menuOuvert:not(#fermerMenu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]):not(#eltAjouter):not(#formAjouter) {
+#blocMenu #menu.menuOuvert {
   width: 260px;
 }
 
-#blocMenu .menuOuvert:not(#menu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]):not(#eltAjouter):not(#formAjouter) {
+#blocMenu #fermerMenu.menuOuvert {
   width: calc(100vw - 260px);
 }
 
@@ -187,9 +187,12 @@ section > div > div > p:nth-child(2) {
 
 #menuBot label {
   display: block;
-  margin: 15px 5px;
-  padding: 0px 0px 7.5px 5px;
+  padding: 15px 7px 22.5px 5px;
   transition: background-color 0.6s ease-in-out;
+}
+
+#menuBot div {
+  width: 100%;
 }
 
 #menuBot label::before {
