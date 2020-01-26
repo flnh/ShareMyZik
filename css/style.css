@@ -1,3 +1,12 @@
+@media (min-width: 700px) and (min-height: 700px) {
+  #eltAjouter #formAjouter {
+    width: 600px;
+    height: 600px;
+    top: calc(100vh - 50vh - 300px);
+    left: calc(100vw - 50vw - 300px);
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -120,6 +129,7 @@ section > div > div > p:nth-child(2) {
   width: 0px;
   background-color: #333333;
   transition: width 0.5s ease-in-out;
+  flex-shrink: 0;
 }
 
 #fermerMenu {
@@ -144,11 +154,11 @@ section > div > div > p:nth-child(2) {
   display: flex;
 }
 
-#blocMenu .menuOuvert:not(#fermerMenu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]) {
+#blocMenu .menuOuvert:not(#fermerMenu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]):not(#eltAjouter):not(#formAjouter) {
   width: 260px;
 }
 
-#blocMenu .menuOuvert:not(#menu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]) {
+#blocMenu .menuOuvert:not(#menu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]):not(#eltAjouter):not(#formAjouter) {
   width: calc(100vw - 260px);
 }
 
@@ -210,4 +220,35 @@ section > div > div > p:nth-child(2) {
 
 #theme + label::before {
   content: url("../svg/moon.svg");
+}
+
+/* ----------------------------------------------------- */
+/* ------------------ AJOUTER MUSIQUE ------------------ */
+/* ----------------------------------------------------- */
+
+#eltAjouter {
+  background-color: rgba(68, 68, 68, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: none;
+}
+
+#formAjouter {
+  background-color: #333333;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: calc(100vh - 50vh - 150px);
+  left: calc(100vw - 50vw - 150px);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#blocMenu .menuOuvert:not(#menu):not(#fermerMenu) {
+  display: block;
+}
+
+#blocMenu #eltAjouter .menuOuvert {
+  opacity: 1;
 }
