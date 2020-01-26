@@ -39,5 +39,6 @@ eltAjouter.addEventListener("click", function (e) {
   if (e.target == eltAjouter) {
     eltAjouter.className = "";
     formAjouter.className = "";
+    btnAjouter.checked = false;
   }
 })

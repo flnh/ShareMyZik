@@ -188,6 +188,8 @@ section > div > div > p:nth-child(2) {
 #menuBot label {
   display: block;
   margin: 15px 5px;
+  padding: 0px 0px 7.5px 5px;
+  transition: background-color 0.6s ease-in-out;
 }
 
 #menuBot label::before {
@@ -251,4 +253,8 @@ section > div > div > p:nth-child(2) {
 
 #blocMenu #eltAjouter .menuOuvert {
   opacity: 1;
+}
+
+#ajouter:checked ~ [for="ajouter"], #categorie:checked ~ [for="categorie"], #theme:checked ~ [for="theme"] {
+  background-color: #888888;
 }
