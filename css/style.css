@@ -12,7 +12,8 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 0px;
+  transition: font-size 0.6s ease-in-out;
 }
 
 h2 {
@@ -28,7 +29,8 @@ p {
 }
 
 label {
-  font-size: 22px;
+  font-size: 0px;
+  transition: font-size 0.6s ease-in-out;
 }
 
 /* ----------------------------------------------------- */
@@ -115,13 +117,15 @@ section > div > div > p:nth-child(2) {
 
 #menu {
   height: 100%;
-  width: 260px;
+  width: 0px;
   background-color: #333333;
+  transition: width 0.5s ease-in-out;
 }
 
 #fermerMenu {
   height: 100%;
-  width: calc(100vw - 260px);
+  width: 100vw;
+  transition: width 0.5s ease-in-out;
 }
 
 #menuTop {
@@ -138,7 +142,22 @@ section > div > div > p:nth-child(2) {
   left: 0;
   transform: translate(calc(-200vw), 0);
   display: flex;
-  transition: transform 1s ease-in-out;
+}
+
+#blocMenu .menuOuvert:not(#fermerMenu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]) {
+  width: 260px;
+}
+
+#blocMenu .menuOuvert:not(#menu):not(#logo):not([for="ajouter"]):not([for="categorie"]):not([for="theme"]) {
+  width: calc(100vw - 260px);
+}
+
+#menuTop .menuOuvert {
+  font-size: 32px;
+}
+
+#menuBot .menuOuvert {
+  font-size: 22px;
 }
 
 #logo {
