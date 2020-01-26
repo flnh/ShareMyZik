@@ -28,6 +28,10 @@ fermerMenu.addEventListener("click", function () {
   hamburger.checked = false;
 })
 
+logo.addEventListener("click", function () {
+  hamburger.checked = false;
+})
+
 btnAjouter.addEventListener("click", function () {
   eltAjouter.className = "menuOuvert";
   setTimeout(function () {
