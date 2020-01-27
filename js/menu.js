@@ -8,6 +8,9 @@ var theme = document.querySelector("[for=\"theme\"]");
 var btnAjouter = document.querySelector("#ajouter");
 var eltAjouter = document.querySelector("#eltAjouter");
 var formAjouter = document.querySelector("#formAjouter");
+var btnCategorie = document.querySelector("#categorie");
+var eltCategorie = document.querySelector("#eltCategorie");
+var formCategorie = document.querySelector("#formCategorie");
 
 hamburger.addEventListener("click", function () {
   menu.className = "menuOuvert";
@@ -45,4 +48,11 @@ eltAjouter.addEventListener("click", function (e) {
     formAjouter.className = "";
     btnAjouter.checked = false;
   }
+})
+
+btnCategorie.addEventListener("click", function () {
+  eltCategorie.className = "menuOuvert";
+  setTimeout(function () {
+    formCategorie.className = "menuOuvert";
+  }, 50);
 })
