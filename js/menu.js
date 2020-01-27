@@ -28,7 +28,9 @@ fermerMenu.addEventListener("click", function () {
   ajouter.className = "";
   categorie.className = "";
   theme.className = "";
-  hamburger.checked = false;
+  setTimeout(function () {
+    hamburger.checked = false;
+  }, 500);
 })
 
 logo.addEventListener("click", function () {
@@ -44,9 +46,11 @@ btnAjouter.addEventListener("click", function () {
 
 eltAjouter.addEventListener("click", function (e) {
   if (e.target == eltAjouter) {
-    eltAjouter.className = "";
     formAjouter.className = "";
-    btnAjouter.checked = false;
+    setTimeout(function () {
+      eltAjouter.className = "";
+      btnAjouter.checked = false;
+    }, 600);
   }
 })
 
@@ -55,4 +59,14 @@ btnCategorie.addEventListener("click", function () {
   setTimeout(function () {
     formCategorie.className = "menuOuvert";
   }, 50);
+})
+
+eltCategorie.addEventListener("click", function (e) {
+  if (e.target == eltCategorie) {
+    formCategorie.className ="";
+    setTimeout(function () {
+      eltCategorie.className = "";
+      btnCategorie.checked = false;
+    }, 600);
+  }
 })

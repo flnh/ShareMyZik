@@ -37,7 +37,8 @@ body {
 
 h1 {
   font-size: 0px;
-  transition: font-size 0.6s ease-in-out;
+  transition: font-size 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  opacity: 0;
 }
 
 h2 {
@@ -177,8 +178,13 @@ section > div > div > p:nth-child(2) {
   width: calc(100vw - 260px);
 }
 
+#menu.menuOuvert label {
+  opacity: 1;
+}
+
 #menuTop .menuOuvert {
   font-size: 32px;
+  opacity: 1;
 }
 
 #menuBot .menuOuvert {
@@ -203,7 +209,8 @@ section > div > div > p:nth-child(2) {
 #menuBot label {
   display: block;
   padding: 15px 7px 22.5px 5px;
-  transition: background-color 0.6s ease-in-out;
+  transition: background-color 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  opacity: 0;
 }
 
 #menuBot div {
