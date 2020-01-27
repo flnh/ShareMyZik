@@ -34,7 +34,15 @@ fermerMenu.addEventListener("click", function () {
 })
 
 logo.addEventListener("click", function () {
-  hamburger.checked = false;
+  menu.className = "";
+  fermerMenu.className = "";
+  logo.className = "";
+  ajouter.className = "";
+  categorie.className = "";
+  theme.className = "";
+  setTimeout(function () {
+    hamburger.checked = false;
+  }, 500);
 })
 
 btnAjouter.addEventListener("click", function () {
