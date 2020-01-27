@@ -290,6 +290,28 @@ section > div > div > p:nth-child(2) {
   outline-color: white;
 }
 
-#conteneurFormulaire #ajouterCategorie #test1 {
-  background-color: transparent;
+/* ----------------------------------------------------- */
+/* --------------------- CATEGORIE --------------------- */
+/* ----------------------------------------------------- */
+
+#formAjouter div:not(#conteneurFormulaire) {
+  display: flex;
+  justify-content: center;
+}
+
+#formBtnAnnuler, #formBtnValider {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 50px;
+  transform: translateY(-15px);
+}
+
+#formBtnAnnuler {
+  background-image: url("../svg/cross.svg");
+}
+
+#formBtnValider {
+  background-image: url("../svg/check.svg");
 }
