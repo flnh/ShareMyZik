@@ -80,6 +80,50 @@ header {
   margin-right: 20px;
 }
 
+#titreCategorie.rechercherOn h2 {
+  display: none;
+}
+
+#titreCategorie.rechercherOn #barreRecherche {
+  display: block;
+}
+
+#barreRecherche {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  outline-color: white;
+  display: none;
+  width: calc(100vw - 200px);
+  text-align: center;
+}
+
+#recherche.rechercherOn {
+  width: 80px;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 2px;
+}
+
+#recherche.rechercherOn #btnRechercheAnnuler, #recherche.rechercherOn #btnRechercheValider {
+  width: 30px;
+  height: 30px;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
+#recherche.rechercherOn #btnRechercheAnnuler {
+  background-image: url("../svg/cross.svg");
+}
+
+#recherche.rechercherOn #btnRechercheValider {
+  background-image: url('../svg/check.svg');
+}
+
 #hamburger {
   display: none;
 }
