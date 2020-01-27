@@ -5,6 +5,14 @@
     top: calc(100vh - 50vh - 300px);
     left: calc(100vw - 50vw - 300px);
   }
+
+  #formAjouter #conteneurFormulaire label {
+    font-size: 22px;
+  }
+
+  #formAjouter input, #formAjouter select {
+    margin: -8% 0px 0px;
+  }
 }
 
 * {
@@ -260,4 +268,28 @@ section > div > div > p:nth-child(2) {
 
 #ajouter:checked ~ [for="ajouter"], #categorie:checked ~ [for="categorie"], #theme:checked ~ [for="theme"] {
   background-color: #888888;
+}
+
+#formAjouter label {
+  font-size: 15px;
+}
+
+#conteneurFormulaire {
+  width: 80%;
+  height: 80%;
+  margin: 6% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#conteneurFormulaire input, #conteneurFormulaire select {
+  background-color: #ED1C24;
+  border: none;
+  color: white;
+  outline-color: white;
+}
+
+#conteneurFormulaire #ajouterCategorie #test1 {
+  background-color: transparent;
 }
