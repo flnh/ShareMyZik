@@ -84,6 +84,10 @@ header {
   margin-right: 20px;
 }
 
+#barreRecherche::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 #titreCategorie.rechercherOn h2 {
   display: none;
 }
