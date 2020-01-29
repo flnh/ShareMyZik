@@ -81,8 +81,6 @@
 body {
   display: flex;
   flex-direction: column;
-  color: white;
-  background-color: #333333;
 }
 
 h1 {
@@ -116,7 +114,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ED1C24;
   height: 40px;
 }
 
@@ -130,10 +127,6 @@ header {
   margin-right: 20px;
 }
 
-#barreRecherche::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 #titreCategorie.rechercherOn h2 {
   display: none;
 }
@@ -143,10 +136,7 @@ header {
 }
 
 #barreRecherche {
-  background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  color: white;
-  outline-color: white;
   display: none;
   width: calc(60vw);
   height: 24px;
@@ -214,7 +204,6 @@ article {
 .img {
   width: 101px;
   height: 88px;
-  background-color: #444444;
   margin: 0 7px;
   margin-top: 6px;
   flex-shrink: 0;
@@ -248,7 +237,6 @@ section > div > div > p:nth-child(2) {
 #menu {
   height: 100%;
   width: 0px;
-  background-color: #333333;
   transition: width 0.5s ease-in-out;
   flex-shrink: 0;
 }
@@ -261,14 +249,12 @@ section > div > div > p:nth-child(2) {
 
 #menuTop {
   height: 60px;
-  background-color: #ED1C24;
 }
 
 #blocMenu {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(68, 68, 68, 0.8);
   top: 0;
   left: 0;
   transform: translate(calc(-200vw), 0);
@@ -359,7 +345,6 @@ section > div > div > p:nth-child(2) {
 /* ----------------------------------------------------- */
 
 #eltAjouter {
-  background-color: rgba(68, 68, 68, 0.8);
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -367,7 +352,6 @@ section > div > div > p:nth-child(2) {
 }
 
 #formAjouter {
-  background-color: #333333;
   width: 300px;
   height: 300px;
   position: absolute;
@@ -385,10 +369,6 @@ section > div > div > p:nth-child(2) {
   opacity: 1;
 }
 
-#ajouter:checked ~ [for="ajouter"], #categorie:checked ~ [for="categorie"], #theme:checked ~ [for="theme"] {
-  background-color: #888888;
-}
-
 #formAjouter label {
   font-size: 15px;
 }
@@ -403,10 +383,7 @@ section > div > div > p:nth-child(2) {
 }
 
 #conteneurFormulaire input, #conteneurFormulaire select {
-  background-color: #ED1C24;
   border: none;
-  color: white;
-  outline-color: white;
 }
 
 #formAjouter div:not(#conteneurFormulaire) {
@@ -436,7 +413,6 @@ section > div > div > p:nth-child(2) {
 /* ----------------------------------------------------- */
 
 #eltCategorie {
-  background-color: rgba(68, 68, 68, 0.8);
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -444,7 +420,6 @@ section > div > div > p:nth-child(2) {
 }
 
 #formCategorie {
-  background-color: #333333;
   width: 300px;
   height: 300px;
   position: absolute;
