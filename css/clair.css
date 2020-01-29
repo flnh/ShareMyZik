@@ -1,0 +1,61 @@
+body {
+  color: white;
+  background-color: #333333;
+}
+
+header {
+  background-color: #ED1C24;
+}
+
+#barreRecherche::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#barreRecherche {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline-color: white;
+}
+
+.img {
+  background-color: #444444;
+}
+
+#menu {
+  background-color: #333333;
+}
+
+#menuTop {
+  background-color: #ED1C24;
+}
+
+#blocMenu {
+  background-color: rgba(68, 68, 68, 0.8);
+}
+
+#eltAjouter {
+  background-color: rgba(68, 68, 68, 0.8);
+}
+
+#formAjouter {
+  background-color: #333333;
+}
+
+#ajouter:checked ~ [for="ajouter"], #categorie:checked ~ [for="categorie"], #theme:checked ~ [for="theme"] {
+  background-color: #888888;
+}
+
+#conteneurFormulaire input, #conteneurFormulaire select {
+  background-color: #ED1C24;
+  border: none;
+  color: white;
+  outline-color: white;
+}
+
+#eltCategorie {
+  background-color: rgba(68, 68, 68, 0.8);
+}
+
+#formCategorie {
+  background-color: #333333;
+}
