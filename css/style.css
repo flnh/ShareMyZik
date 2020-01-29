@@ -22,7 +22,53 @@
   }
 
   #titreCategorie #barreRecherche {
-    width: 300px;
+    width: calc(40vw);
+    animation: animBarreRechercheGrand 1.2s linear 0s 1;
+  }
+
+  #titreCategorie #barreRecherche.rechercherOff {
+    width: 0;
+    transition: width 1.1s ease-in-out;
+  }
+
+  header #titreCategorie {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header #titreCategorie.rechercherOn {
+    justify-content: flex-end;
+  }
+}
+
+@keyframes animBarreRecherche {
+  0% {
+    width: 0px;
+  }
+  30% {
+    width: calc(60vw);
+  }
+  70% {
+    width: calc(30vw);
+  }
+  100% {
+    width: calc(60vw);
+  }
+}
+
+@keyframes animBarreRechercheGrand {
+  0% {
+    width: 0px;
+  }
+  30% {
+    width: calc(40vw);
+  }
+  70% {
+    width: calc(20vw);
+  }
+  100% {
+    width: calc(40vw);
   }
 }
 
@@ -102,8 +148,15 @@ header {
   color: white;
   outline-color: white;
   display: none;
-  width: 200px;
+  width: calc(60vw);
+  height: 24px;
   text-align: center;
+  animation: animBarreRecherche 1.2s linear 0s 1;
+}
+
+#barreRecherche.rechercherOff {
+  width: 0;
+  transition: width 1.1s ease-in-out;
 }
 
 #recherche.rechercherOn {

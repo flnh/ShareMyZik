@@ -13,8 +13,12 @@ btnRecherche.addEventListener("click", function (e) {
 
 btnRechercheAnnuler.addEventListener("click", function (e) {
   if (e.target == btnRechercheAnnuler && barreRecherche.value == "") {
-    titreCategorie.className = "";
-    btnRecherche.className = "";
+    barreRecherche.className = "rechercherOff";
+    setTimeout(function () {
+      titreCategorie.className = "";
+      btnRecherche.className = "";
+      barreRecherche.className = "";
+    }, 1100)
   } else {
     barreRecherche.value = "";
   }
