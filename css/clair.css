@@ -34,7 +34,8 @@ header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
 
 
 #ajouter:checked ~ [for="ajouter"], #categorie:checked ~ [for="categorie"], #theme:checked ~ [for="theme"] {
-  background-color: #eeeeee;
+  background-color: #444444;
+  color: white;
 }
 
 #conteneurFormulaire input, #conteneurFormulaire select {
