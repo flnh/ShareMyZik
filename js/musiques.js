@@ -68,29 +68,33 @@ elem.innerHTML += '<span>More content</span>';
 ±2.38%
 100% slower*/
 
-for (var i = reponse.length - 1; i >= 0; i--) {
+  for (var i = reponse.length - 1; i >= 0; i--) {
+    var lien = document.createElement('a');
+    lien.href = reponse[i][0];
+    lien.target = "_blank";
     var section = document.createElement('section');
     var img = document.createElement('div');
     img.className = "img";
-    img.style.backgroundImage = "url(" + reponse[i][0] + ")";
+    img.style.backgroundImage = "url(" + reponse[i][1] + ")";
     img.style.backgroundSize = "101px 88px";
     section.appendChild(img);
     var divPrincipale = document.createElement('div');
     var titre = document.createElement('h3');
-    titre.innerText = reponse[i][1];
+    titre.innerText = reponse[i][2];
     divPrincipale.appendChild(titre);
     var artiste = document.createElement('p');
-    artiste.innerText = reponse[i][2];
+    artiste.innerText = reponse[i][3];
     divPrincipale.appendChild(artiste);
     var sousDivPrincipale = document.createElement('div');
     var duree = document.createElement('p');
-    duree.innerText = reponse[i][3];
+    duree.innerText = reponse[i][4];
     sousDivPrincipale.appendChild(duree);
     var genre = document.createElement('p');
-    genre.innerText = reponse[i][4];
+    genre.innerText = reponse[i][5];
     sousDivPrincipale.appendChild(genre);
     divPrincipale.appendChild(sousDivPrincipale);
     section.appendChild(divPrincipale);
-    article.appendChild(section);
+    lien.appendChild(section);
+    article.appendChild(lien);
   }
 })

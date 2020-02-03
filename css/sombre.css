@@ -3,6 +3,10 @@ body {
   background-color: #333333;
 }
 
+article a, article a:visited {
+  color: white;
+}
+
 header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
   background-color: #ED1C24;
 }

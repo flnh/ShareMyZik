@@ -201,6 +201,10 @@ article {
   overflow: auto;
 }
 
+article a, article a:visited {
+  text-decoration: none;
+}
+
 .img {
   width: 101px;
   height: 88px;
