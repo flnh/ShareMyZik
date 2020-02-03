@@ -1,6 +1,6 @@
 body {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #333333;
 }
 
 header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
@@ -9,7 +9,7 @@ header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
 
 #barreRecherche, #conteneurFormulaire input, #conteneurFormulaire select {
   color: white;
-  outline-color: black;
+  outline-color: white;
 }
 
 #barreRecherche::placeholder {
@@ -21,11 +21,11 @@ header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
 }
 
 .img {
-  background-color: #cccccc;
+  background-color: #444444;
 }
 
 #menu, #formCategorie, #formAjouter {
-  background-color: #dddddd;
+  background-color: #333333;
 }
 
 #blocMenu, #eltAjouter, #eltCategorie {
@@ -34,7 +34,7 @@ header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
 
 
 #ajouter:checked ~ [for="ajouter"], #categorie:checked ~ [for="categorie"], #theme:checked ~ [for="theme"] {
-  background-color: #eeeeee;
+  background-color: #888888;
 }
 
 #conteneurFormulaire input, #conteneurFormulaire select {
