@@ -207,6 +207,8 @@ article {
   margin: 0 7px;
   margin-top: 6px;
   flex-shrink: 0;
+  background-size: 101px 88px;
+  background-position: center;
 }
 
 section {
