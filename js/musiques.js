@@ -114,7 +114,7 @@ elem.innerHTML += '<span>More content</span>';
     titre.innerText = musique['Titre'];
     divPrincipale.appendChild(titre);
     var artiste = document.createElement('p');
-    artiste.innerText = musique['Artiste'];
+    artiste.innerHTML = "<strong>" + musique['Artiste'] + "</strong>, " + musique['Album'];
     divPrincipale.appendChild(artiste);
     var sousDivPrincipale = document.createElement('div');
     var duree = document.createElement('p');
