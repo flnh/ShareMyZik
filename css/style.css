@@ -40,6 +40,12 @@
   header #titreCategorie.rechercherOn {
     justify-content: flex-end;
   }
+
+  body article a.lienSection {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+  }
 }
 
 @keyframes animBarreRecherche {
@@ -213,6 +219,13 @@ article a, article a:visited {
   flex-shrink: 0;
   background-size: 101px 88px;
   background-position: center;
+}
+
+article a.lienSection {
+  display: block;
+  width: 300px;
+  height: 150px;
+  overflow: auto;
 }
 
 section {
