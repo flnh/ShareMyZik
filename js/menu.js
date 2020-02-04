@@ -11,6 +11,7 @@ var formAjouter = document.querySelector("#formAjouter");
 var btnCategorie = document.querySelector("#categorie");
 var eltCategorie = document.querySelector("#eltCategorie");
 var formCategorie = document.querySelector("#formCategorie");
+var formBtnAnnuler = document.querySelector("#formBtnAnnuler");
 
 hamburger.addEventListener("click", function () {
   menu.className = "menuOuvert";
@@ -53,7 +54,7 @@ btnAjouter.addEventListener("click", function () {
 })
 
 eltAjouter.addEventListener("click", function (e) {
-  if (e.target == eltAjouter) {
+  if (e.target == eltAjouter || e.target == formBtnAnnuler) {
     formAjouter.className = "";
     setTimeout(function () {
       eltAjouter.className = "";

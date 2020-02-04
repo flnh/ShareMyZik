@@ -1,6 +1,6 @@
 var article = document.querySelector('article');
 
-ajax("./server/musiques.php", function (reponse) {
+ajax("./server/musiques.php", "GET", "", function (reponse) {
   /*ORDRE CROISSANT
   reponse.forEach(function (musique) {
     var section = document.createElement('section');
@@ -114,7 +114,7 @@ elem.innerHTML += '<span>More content</span>';
     titre.innerText = musique['Titre'];
     divPrincipale.appendChild(titre);
     var artiste = document.createElement('p');
-    artiste.innerHTML = "<strong>" + musique['Artiste'] + "</strong>, " + musique['Album'];
+    artiste.innerText = musique['Artiste'];
     divPrincipale.appendChild(artiste);
     var sousDivPrincipale = document.createElement('div');
     var duree = document.createElement('p');
