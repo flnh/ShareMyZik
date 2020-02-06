@@ -7,11 +7,11 @@ article a, article a:visited {
   color: black;
 }
 
-header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
+header, #menuTop, #conteneurFormulaire input {
   background-color: #ED1C24;
 }
 
-#barreRecherche, #conteneurFormulaire input, #conteneurFormulaire select {
+#barreRecherche, #conteneurFormulaire input {
   color: white;
   outline-color: black;
 }
@@ -42,6 +42,6 @@ header, #menuTop, #conteneurFormulaire input, #conteneurFormulaire select {
   color: white;
 }
 
-#conteneurFormulaire input, #conteneurFormulaire select {
+#conteneurFormulaire input {
   border: none;
 }

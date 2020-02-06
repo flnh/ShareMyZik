@@ -5,6 +5,7 @@ function ajax(url, methode, data, callback) {
 
   req.onreadystatechange = function () {
     if (req.readyState == 4 && req.status == 200) {
+      console.log(req.response);
       callback(JSON.parse(req.response));
     }
   }
@@ -12,10 +13,10 @@ function ajax(url, methode, data, callback) {
   if (methode == "GET") {
     req.send(null);
   } else if (methode == "POST") {
-    musique.append('ID', data['ID']);
     musique.append('Titre', data['Titre']);
     musique.append('Artiste', data['Artiste']);
     musique.append('Duree', data['Duree']);
+    musique.append('Genre', data['Genre']);
     musique.append('UrlMusique', data['UrlMusique']);
     musique.append('UrlImage', data['UrlImage']);
     req.send(musique);
