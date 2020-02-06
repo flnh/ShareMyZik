@@ -54,12 +54,31 @@ btnAjouter.addEventListener("click", function () {
 })
 
 eltAjouter.addEventListener("click", function (e) {
-  if (e.target == eltAjouter || e.target == formBtnAnnuler) {
+  if (e.target == eltAjouter) {
     formAjouter.className = "";
     setTimeout(function () {
       eltAjouter.className = "";
       btnAjouter.checked = false;
     }, 600);
+  }
+})
+
+formBtnAnnuler.addEventListener("click", function (e) {
+  if (e.target == formBtnAnnuler) {
+    if (ajouterTitre.value == "" && ajouterArtiste.value == "" && ajouterDuree.value == "" && ajouterCategorie.value == "" && ajouterUrlMusique.value == "" && ajouterUrlImg.value == "") {
+      formAjouter.className = "";
+      setTimeout(function () {
+        eltAjouter.className = "";
+        btnAjouter.checked = false;
+      }, 600);
+    } else {
+      ajouterTitre.value = "";
+      ajouterArtiste.value = "";
+      ajouterDuree.value = "";
+      ajouterCategorie.value = "";
+      ajouterUrlMusique.value = "";
+      ajouterUrlImg.value = "";
+    }
   }
 })
 

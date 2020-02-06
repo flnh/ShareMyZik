@@ -12,7 +12,7 @@
   // echo json_encode($tabMusiques);
   require('./bdd.php');
 
-  $req = $bdd->prepare('SELECT * FROM musiques ORDER BY ID DESC');
+  $req = $bdd->prepare('SELECT * FROM musiques WHERE ID > ' . $_GET['lastId'] . ' ORDER BY ID DESC');
   $req->execute();
 
   $tabSortie = [];

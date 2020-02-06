@@ -8,16 +8,29 @@ var ajouterUrlMusique = document.querySelector("#ajouterURLMusique");
 
 formBtnValider.addEventListener('click', function (e) {
   if (e.target == formBtnValider) {
-    console.log('ok');
-    var sortie = new Array();
-    sortie['Titre'] = ajouterTitre.value;
-    sortie['Artiste'] = ajouterArtiste.value;
-    sortie['Duree'] = ajouterDuree.value;
-    sortie['Genre'] = ajouterCategorie.value;
-    sortie['UrlMusique'] = ajouterUrlImg.value;
-    sortie['UrlImage'] = ajouterUrlImg.value;
-    ajax('./server/addMusique.php', 'POST', sortie, function (e) {
-      console.log(e);
+    var sortie = new FormData;
+    sortie.append('Titre', ajouterTitre.value);
+    sortie.append('Artiste', ajouterArtiste.value);
+    sortie.append('Duree', ajouterDuree.value);
+    sortie.append('Genre', ajouterCategorie.value);
+    sortie.append('UrlMusique', ajouterUrlMusique.value);
+    sortie.append('UrlImage', ajouterUrlImg.value);
+    ajax('./server/addMusique.php', 'POST', sortie, function () {
+      formAjouter.className = "";
+      setTimeout(function () {
+        eltAjouter.className = "";
+        btnAjouter.checked = false;
+        menu.className = "";
+        fermerMenu.className = "";
+        logo.className = "";
+        ajouter.className = "";
+        categorie.className = "";
+        theme.className = "";
+        setTimeout(function () {
+          hamburger.checked = false;
+          recupererMusiques();
+        }, 500);
+      }, 600);
     })
   }
 })
