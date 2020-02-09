@@ -28,7 +28,6 @@ formBtnValider.addEventListener('click', function (e) {
         theme.className = "";
         setTimeout(function () {
           hamburger.checked = false;
-          recupererMusiques();
         }, 500);
       }, 600);
     })

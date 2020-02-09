@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `musiques` (
   `UrlMusique` varchar(1000) NOT NULL,
   `UrlImage` varchar(1000) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `musiques`

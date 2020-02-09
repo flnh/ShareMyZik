@@ -102,42 +102,45 @@ function recupererMusiques() {
     //   lien.appendChild(section);
     //   article.appendChild(lien);
     // }
-    lastId = JSON.parse(reponse)[0];
-    lastId = lastId['ID'];
-    JSON.parse(reponse).forEach(function (musique) {
-      var lien = document.createElement('a');
-      lien.href = musique['UrlMusique'];
-      lien.target = "_blank";
-      lien.className = "lienSection";
-      var section = document.createElement('section');
-      var img = document.createElement('div');
-      img.className = "img";
-      img.style.backgroundImage = "url(" + musique['UrlImage'] + ")";
-      img.style.backgroundSize = "101px 88px";
-      section.appendChild(img);
-      var divPrincipale = document.createElement('div');
-      var titre = document.createElement('h3');
-      titre.innerText = musique['Titre'];
-      divPrincipale.appendChild(titre);
-      var artiste = document.createElement('p');
-      artiste.innerText = musique['Artiste'];
-      divPrincipale.appendChild(artiste);
-      var sousDivPrincipale = document.createElement('div');
-      var duree = document.createElement('p');
-      duree.innerText = musique['Duree'];
-      sousDivPrincipale.appendChild(duree);
-      var genre = document.createElement('p');
-      genre.innerText = musique['Genre'];
-      sousDivPrincipale.appendChild(genre);
-      divPrincipale.appendChild(sousDivPrincipale);
-      section.appendChild(divPrincipale);
-      lien.appendChild(section);
-      if (firstRun) {
-        article.appendChild(lien);
-      } else {
-        article.insertAdjacentElement('afterbegin', lien);
-      }
-    })
-    firstRun = false;
+    if (reponse.length > 2) {
+      lastId = JSON.parse(reponse)[0];
+      lastId = lastId['ID'];
+      JSON.parse(reponse).forEach(function (musique) {
+        var lien = document.createElement('a');
+        lien.href = musique['UrlMusique'];
+        lien.target = "_blank";
+        lien.className = "lienSection";
+        var section = document.createElement('section');
+        var img = document.createElement('div');
+        img.className = "img";
+        img.style.backgroundImage = "url(" + musique['UrlImage'] + ")";
+        img.style.backgroundSize = "101px 88px";
+        section.appendChild(img);
+        var divPrincipale = document.createElement('div');
+        var titre = document.createElement('h3');
+        titre.innerText = musique['Titre'];
+        divPrincipale.appendChild(titre);
+        var artiste = document.createElement('p');
+        artiste.innerText = musique['Artiste'];
+        divPrincipale.appendChild(artiste);
+        var sousDivPrincipale = document.createElement('div');
+        var duree = document.createElement('p');
+        duree.innerText = musique['Duree'];
+        sousDivPrincipale.appendChild(duree);
+        var genre = document.createElement('p');
+        genre.innerText = musique['Genre'];
+        sousDivPrincipale.appendChild(genre);
+        divPrincipale.appendChild(sousDivPrincipale);
+        section.appendChild(divPrincipale);
+        lien.appendChild(section);
+        if (firstRun) {
+          article.appendChild(lien);
+        } else {
+          article.insertAdjacentElement('afterbegin', lien);
+        }
+      })
+      firstRun = false;
+    }
+    setTimeout(recupererMusiques, 1000);
   })
 }

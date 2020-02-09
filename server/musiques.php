@@ -11,25 +11,27 @@
   // }
   // echo json_encode($tabMusiques);
   require('./bdd.php');
-
-  $req = $bdd->prepare('SELECT * FROM musiques WHERE ID > ' . $_GET['lastId'] . ' ORDER BY ID DESC');
-  $req->execute();
-
-  $tabSortie = [];
-  $i = 0;
-
-  while($donnees = $req->fetch()) {
-    $tabSortie[$i]['ID'] = $donnees['ID'];
-    $tabSortie[$i]['Titre'] = $donnees['Titre'];
-    $tabSortie[$i]['Artiste'] = $donnees['Artiste'];
-    $tabSortie[$i]['Duree'] = $donnees['Duree'];
-    $tabSortie[$i]['Genre'] = $donnees['Genre'];
-    $tabSortie[$i]['UrlMusique'] = $donnees['UrlMusique'];
-    $tabSortie[$i]['UrlImage'] = $donnees['UrlImage'];
-    $i++;
+  
+  if (isset($_GET['lastId']) && is_numeric($_GET['lastId'])) {
+    $req = $bdd->prepare('SELECT * FROM musiques WHERE ID > ' . $_GET['lastId'] . ' ORDER BY ID DESC');
+    $req->execute();
+  
+    $tabSortie = [];
+    $i = 0;
+  
+    while($donnees = $req->fetch()) {
+      $tabSortie[$i]['ID'] = $donnees['ID'];
+      $tabSortie[$i]['Titre'] = $donnees['Titre'];
+      $tabSortie[$i]['Artiste'] = $donnees['Artiste'];
+      $tabSortie[$i]['Duree'] = $donnees['Duree'];
+      $tabSortie[$i]['Genre'] = $donnees['Genre'];
+      $tabSortie[$i]['UrlMusique'] = $donnees['UrlMusique'];
+      $tabSortie[$i]['UrlImage'] = $donnees['UrlImage'];
+      $i++;
+    }
+  
+    $req->closeCursor();
+  
+    echo json_encode($tabSortie);
   }
-
-  $req->closeCursor();
-
-  echo json_encode($tabSortie);
 ?>
