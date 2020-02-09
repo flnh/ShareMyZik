@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 06 fév. 2020 à 23:28
+-- Généré le :  Dim 09 fév. 2020 à 15:13
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -49,7 +49,11 @@ INSERT INTO `musiques` (`ID`, `Titre`, `Artiste`, `Duree`, `Genre`, `UrlMusique`
 (2, 'Keep Ya Head Up', '2Pac', '4m32s', 'Rap', 'https://www.youtube.com/watch?v=WP3_3NkZW-U', 'https://m.media-amazon.com/images/I/81YNJf-6h+L._SS500_.jpg'),
 (3, 'Bailando', 'Paradisio', '3m45s', 'EuropDanse', 'https://www.youtube.com/watch?v=xiWtqVtd1Oo', 'https://i.ebayimg.com/images/g/lHcAAOxyJ-FRkvz0/s-l300.jpg'),
 (4, 'the fat party', 'Nicolas Chenard', '1m22s', 'Electronique', 'https://www.dailymotion.com/video/x9jcvo', 'https://i3.sndcdn.com/avatars-000002218678-rgws18-t500x500.jpg'),
-(5, 'Ghetto bird', 'Ice Cube', '3m50s', 'Rap', 'https://www.youtube.com/watch?v=zhsfn9IyiLQ', 'https://images-na.ssl-images-amazon.com/images/I/51hAtxeNEaL._SX425_.jpg');
+(5, 'Ghetto bird', 'Ice Cube', '3m50s', 'Rap', 'https://www.youtube.com/watch?v=zhsfn9IyiLQ', 'https://images-na.ssl-images-amazon.com/images/I/51hAtxeNEaL._SX425_.jpg'),
+(6, 'Ave Maria', 'Jan Terri', '5m07s', 'Troll', 'https://www.youtube.com/watch?v=NX5xIRUcPyI', 'https://i.vimeocdn.com/video/673192243_640.jpg'),
+(7, 'The Kingslayer', 'Nightwish', '4m10s', 'Metal symphonique', 'https://www.youtube.com/watch?v=Sp8ZTF20py4', 'https://images-na.ssl-images-amazon.com/images/I/51xzzw8pY2L._SX355_.jpg'),
+(8, 'Miroir miroir', 'Rohff', '3m41s', 'Rap', 'https://www.youtube.com/watch?v=jJzYPfaLQak', 'https://www.raprnb.com/wp-content/uploads/2018/10/rohff-album-3-1200x683.png'),
+(9, 'Faded', 'Alan Walker', '3m32s', 'Electronique', 'https://www.youtube.com/watch?v=60ItHLz5WEA', 'https://i.ytimg.com/vi/b3Mm4wHMtjQ/maxresdefault.jpg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

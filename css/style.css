@@ -45,6 +45,7 @@
     width: 300px;
     height: 200px;
     overflow: auto;
+    justify-content: center;
   }
 }
 
@@ -205,6 +206,7 @@ article {
   justify-content: center;
   height: calc(100vh - 40px);
   overflow: auto;
+  align-content: flex-start;
 }
 
 article a, article a:visited {
@@ -222,10 +224,12 @@ article a, article a:visited {
 }
 
 article a.lienSection {
-  display: block;
-  width: 300px;
+  display: flex;
+  width: 100%;
   height: 150px;
   overflow: auto;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 section {
