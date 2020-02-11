@@ -138,6 +138,7 @@ function recupererMusiques() {
         } else {
           article.insertAdjacentElement('afterbegin', lien);
         }
+        liens = document.querySelectorAll('a');
       })
       firstRun = false;
     }

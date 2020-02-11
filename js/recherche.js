@@ -3,6 +3,7 @@ var btnRecherche = document.querySelector("#recherche");
 var btnRechercheAnnuler = document.querySelector("#btnRechercheAnnuler");
 var btnRechercheValider = document.querySelector("#btnRechercheValider");
 var barreRecherche = document.querySelector("#barreRecherche");
+var liens;
 
 btnRecherche.addEventListener("click", function (e) {
   if (e.target == btnRecherche) {
@@ -21,5 +22,18 @@ btnRechercheAnnuler.addEventListener("click", function (e) {
     }, 1100)
   } else {
     barreRecherche.value = "";
+    liens.forEach(function (musique) {
+      musique.style.display = "flex";
+    })
   }
+})
+
+barreRecherche.addEventListener('input', function (e) {
+  liens.forEach(function (musique) {
+    musique.style.display = "flex";
+    var titre = musique.querySelector('h3');
+    if (titre.innerText.toLowerCase().search(barreRecherche.value.toLowerCase()) == -1) {
+      musique.style.display = "none";
+    }
+  })
 })
