@@ -12,7 +12,7 @@ formBtnValider.addEventListener('click', function (e) {
     sortie.append('Titre', ajouterTitre.value);
     sortie.append('Artiste', ajouterArtiste.value);
     sortie.append('Duree', ajouterDuree.value);
-    sortie.append('Genre', ajouterCategorie.value);
+    sortie.append('Categorie', ajouterCategorie.value);
     sortie.append('UrlMusique', ajouterUrlMusique.value);
     sortie.append('UrlImage', ajouterUrlImg.value);
     ajax('./server/addMusique.php', 'POST', sortie, function () {

@@ -1,0 +1,20 @@
+  Pour le moment il n'est plus possible d'ajouter de musiques
+  suite au changement d'architecture sur la Base De Données
+
+  TODO:
+
+  (1)SERVER-addMUsiques.php:
+  Récupérer les categories, comparer a celle envoyée
+  Si elle existe, la musique ajoutee prend son id
+  Sinon On cree la categorie et la musique ajoutee prend son id
+  (Voir si j'etablit une norme (premiere lettre majuscule le reste minuscule))
+  (Pour eviter des choses genre RAP rAP Rap RaP etc)
+
+  (2)CLIENT-musiques.js:
+  En profiter pour stocker une liste des différentes categories,
+  Sois en l'extrayant des données reçues sois directement depuis le serveur
+  en prevoyant un systeme de lastid pour les categories pour la MAJ
+
+  (3)CLIENT-ajouter.js:
+  Proposer une liste des categories déjà existante au fur et a mesure
+  que l'utilisateur tape dans l'input

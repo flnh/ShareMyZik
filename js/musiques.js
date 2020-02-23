@@ -127,9 +127,9 @@ function recupererMusiques() {
         var duree = document.createElement('p');
         duree.innerText = musique['Duree'];
         sousDivPrincipale.appendChild(duree);
-        var genre = document.createElement('p');
-        genre.innerText = musique['Genre'];
-        sousDivPrincipale.appendChild(genre);
+        var categorie = document.createElement('p');
+        categorie.innerText = musique['Categorie'];
+        sousDivPrincipale.appendChild(categorie);
         divPrincipale.appendChild(sousDivPrincipale);
         section.appendChild(divPrincipale);
         lien.appendChild(section);
