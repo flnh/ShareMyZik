@@ -1,11 +1,11 @@
 var article = document.querySelector('article');
 var firstRun = true;
-var lastId = 0;
+var lastIdMusique = 0;
 
 recupererMusiques();
 
 function recupererMusiques() {
-  ajax("./server/musiques.php?lastId="+ lastId, "GET", "", function (reponse) {
+  ajax("./server/musiques.php?lastId="+ lastIdMusique, "GET", "", function (reponse) {
     /*ORDRE CROISSANT
     reponse.forEach(function (musique) {
       var section = document.createElement('section');
@@ -103,8 +103,8 @@ function recupererMusiques() {
     //   article.appendChild(lien);
     // }
     if (reponse.length > 2) {
-      lastId = JSON.parse(reponse)[0];
-      lastId = lastId['ID'];
+      lastIdMusique = JSON.parse(reponse)[0];
+      lastIdMusique = lastIdMusique['ID'];
       JSON.parse(reponse).forEach(function (musique) {
         var lien = document.createElement('a');
         lien.href = musique['UrlMusique'];

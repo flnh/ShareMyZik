@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 23 fév. 2020 à 01:13
+-- Généré le :  mar. 25 fév. 2020 à 10:05
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `categorie` (
 INSERT INTO `categorie` (`ID`, `ID_Categorie`, `Categorie`) VALUES
 (1, 1, 'Electronique'),
 (2, 2, 'Rap'),
-(3, 3, 'EuropDanse'),
+(3, 3, 'Europdanse'),
 (4, 4, 'Troll'),
 (5, 5, 'Metal symphonique'),
 (6, 6, 'Hardcore');

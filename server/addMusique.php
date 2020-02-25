@@ -15,7 +15,7 @@
       'UrlMusique' => htmlspecialchars($_POST['UrlMusique']),
       'UrlImage' => htmlspecialchars($_POST['UrlImage'])
     ];
-    $categorie = ucfirst(strtolower($_POST['Categorie']));
+    $categorie = ucfirst(strtolower(strip_tags($_POST['Categorie'])));
     
     foreach ($listeCategories as $value) {
       if (in_array($categorie, $value)) {
