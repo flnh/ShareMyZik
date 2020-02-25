@@ -9,9 +9,9 @@
     $req->closeCursor();
     $categorieExistante;
     $sortie = [
-      'Titre' => htmlspecialchars($_POST['Titre']),
-      'Artiste' => htmlspecialchars($_POST['Artiste']),
-      'Duree' => htmlspecialchars($_POST['Duree']),
+      'Titre' => ucfirst(strtolower(strip_tags($_POST['Titre']))),
+      'Artiste' => ucfirst(strtolower(strip_tags($_POST['Artiste']))),
+      'Duree' => strip_tags($_POST['Duree']),
       'UrlMusique' => htmlspecialchars($_POST['UrlMusique']),
       'UrlImage' => htmlspecialchars($_POST['UrlImage'])
     ];
@@ -34,8 +34,6 @@
       $req->closeCursor();
       $sortie['Categorie'] = count($listeCategories) + 1;
     }
-
-
 
 
 

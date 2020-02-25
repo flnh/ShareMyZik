@@ -32,7 +32,8 @@ barreRecherche.addEventListener('input', function (e) {
   liens.forEach(function (musique) {
     musique.style.display = "flex";
     var titre = musique.querySelector('h3');
-    if (titre.innerText.toLowerCase().search(barreRecherche.value.toLowerCase()) == -1) {
+    var artiste = musique.querySelector('h3 + p');
+    if (titre.innerText.toLowerCase().search(barreRecherche.value.toLowerCase()) == -1 && artiste.innerText.toLowerCase().search(barreRecherche.value.toLowerCase()) == -1) {
       musique.style.display = "none";
     }
   })

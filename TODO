@@ -9,14 +9,28 @@
   Sinon On cree la categorie et la musique ajoutee prend son id
   (Voir si j'etablit une norme (premiere lettre majuscule le reste minuscule))
   (Pour eviter des choses genre RAP rAP Rap RaP etc)
-  -------------------------------------------------------
-  -------------------------- OK -------------------------
-  -------------------------------------------------------
+  ---------------------------------------------------------------------------
+  ------------------------------------ OK -----------------------------------
+  ---------------------------------------------------------------------------
 
-  (2)CLIENT-musiques.js:
+->  (2)CLIENT-musiques.js:
   En profiter pour stocker une liste des différentes categories,
   Sois en l'extrayant des données reçues sois directement depuis le serveur
   en prevoyant un systeme de lastid pour les categories pour la MAJ
+
+  (2Bis)CLIENT-categorie:
+  Afficher les differentes catégories avec un style (formes de bulles)
+  ^
+  |
+  ^
+  UTILISER UNE CLASSE
+  ^
+  |
+  ^
+  Insérer le même style dans les musiques(musiques.js)
+  Avec un click afficher les musiques correspondantes
+  ->UTILISER UNE FONCTION
+  Pour l'adapter a la barre de recherche avec un #
 
   (3)CLIENT-ajouter.js:
   Proposer une liste des categories déjà existante au fur et a mesure
