@@ -9,6 +9,9 @@
   Sinon On cree la categorie et la musique ajoutee prend son id
   (Voir si j'etablit une norme (premiere lettre majuscule le reste minuscule))
   (Pour eviter des choses genre RAP rAP Rap RaP etc)
+  -------------------------------------------------------
+  -------------------------- OK -------------------------
+  -------------------------------------------------------
 
   (2)CLIENT-musiques.js:
   En profiter pour stocker une liste des différentes categories,
