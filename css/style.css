@@ -14,7 +14,7 @@
     margin: -8% 0px 0px;
   }
 
-  #eltCategorie #formCategorie {
+  #eltCategorie #listeCategorie {
     width: 600px;
     height: 600px;
     top: calc(100vh - 50vh - 300px);
@@ -441,7 +441,7 @@ section > div > div > p:nth-child(2) {
   display: none;
 }
 
-#formCategorie {
+#listeCategorie {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -455,6 +455,6 @@ section > div > div > p:nth-child(2) {
   display: block;
 }
 
-#blocMenu #formCategorie.menuOuvert {
+#blocMenu #listeCategorie.menuOuvert {
   opacity: 1;
 }

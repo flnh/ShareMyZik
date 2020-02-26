@@ -1,6 +1,7 @@
 var article = document.querySelector('article');
 var firstRun = true;
 var lastIdMusique = 0;
+var tabCategorie = [];
 
 recupererMusiques();
 
@@ -130,6 +131,17 @@ function recupererMusiques() {
         var categorie = document.createElement('p');
         categorie.className = 'categorie';
         categorie.innerText = musique['Categorie'];
+        if (!tabCategorie.length) {
+          tabCategorie.push(musique['Categorie']);
+        } else {
+          tabCategorie.forEach(function (categorie) {
+            console.log('test');
+            if (categorie.search(musique['Categorie']) == -1) {
+              console.log('ok');
+              tabCategorie.push(musique['Categorie']);
+            }
+          })
+        }
         sousDivPrincipale.appendChild(categorie);
         divPrincipale.appendChild(sousDivPrincipale);
         section.appendChild(divPrincipale);

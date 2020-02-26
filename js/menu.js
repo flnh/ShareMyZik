@@ -10,7 +10,7 @@ var eltAjouter = document.querySelector("#eltAjouter");
 var formAjouter = document.querySelector("#formAjouter");
 var btnCategorie = document.querySelector("#categorie");
 var eltCategorie = document.querySelector("#eltCategorie");
-var formCategorie = document.querySelector("#formCategorie");
+var listeCategorie = document.querySelector("#listeCategorie");
 var formBtnAnnuler = document.querySelector("#formBtnAnnuler");
 
 hamburger.addEventListener("click", function () {
@@ -85,13 +85,13 @@ formBtnAnnuler.addEventListener("click", function (e) {
 btnCategorie.addEventListener("click", function () {
   eltCategorie.className = "menuOuvert";
   setTimeout(function () {
-    formCategorie.className = "menuOuvert";
+    listeCategorie.className = "menuOuvert";
   }, 50);
 })
 
 eltCategorie.addEventListener("click", function (e) {
   if (e.target == eltCategorie) {
-    formCategorie.className ="";
+    listeCategorie.className ="";
     setTimeout(function () {
       eltCategorie.className = "";
       btnCategorie.checked = false;
