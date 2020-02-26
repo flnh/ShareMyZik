@@ -128,6 +128,7 @@ function recupererMusiques() {
         duree.innerText = musique['Duree'];
         sousDivPrincipale.appendChild(duree);
         var categorie = document.createElement('p');
+        categorie.className = 'categorie';
         categorie.innerText = musique['Categorie'];
         sousDivPrincipale.appendChild(categorie);
         divPrincipale.appendChild(sousDivPrincipale);

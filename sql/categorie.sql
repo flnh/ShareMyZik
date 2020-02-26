@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `categorie` (
 INSERT INTO `categorie` (`ID`, `ID_Categorie`, `Categorie`) VALUES
 (1, 1, 'Electronique'),
 (2, 2, 'Rap'),
-(3, 3, 'Europdanse'),
+(3, 3, 'Europdance'),
 (4, 4, 'Troll'),
 (5, 5, 'Metal symphonique'),
 (6, 6, 'Hardcore');

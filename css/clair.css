@@ -7,6 +7,12 @@ article a, article a:visited {
   color: black;
 }
 
+p.categorie {
+  color: white;
+  background-color: #ED1C24;
+  padding: 3px;
+}
+
 header, #menuTop, #conteneurFormulaire input {
   background-color: #ED1C24;
 }
