@@ -17,11 +17,15 @@
   En profiter pour stocker une liste des différentes categories,
   Sois en l'extrayant des données reçues sois directement depuis le serveur
   en prevoyant un systeme de lastid pour les categories pour la MAJ
+  ---------------------------------------------------------------------------
+  ------------------------------------ OK -----------------------------------
+  ---------------------------------------------------------------------------
+
 
   (tabCategorie contiendra la liste des catégories)
 
   (2Bis)CLIENT-categorie:
-  Afficher les differentes catégories avec un style (formes de bulles)
+  Afficher les differentes catégories avec un style (formes de bulles) -> OK
   ^
   |
   ^
@@ -30,10 +34,12 @@
   |
   ^
   Insérer le même style dans les musiques(musiques.js) -> OK
-  Avec un click afficher les musiques correspondantes
-  ->UTILISER UNE FONCTION
-  Pour l'adapter a la barre de recherche avec un #
+  Avec un click afficher les musiques correspondantes (
+    dans categorie et musique
+  )
 
   (3)CLIENT-ajouter.js:
   Proposer une liste des categories déjà existante au fur et a mesure
   que l'utilisateur tape dans l'input
+   ->UTILISER UNE FONCTION
+  Pour l'adapter a la barre de recherche avec un #

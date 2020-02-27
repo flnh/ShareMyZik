@@ -131,17 +131,18 @@ function recupererMusiques() {
         var categorie = document.createElement('p');
         categorie.className = 'categorie';
         categorie.innerText = musique['Categorie'];
-        if (!tabCategorie.length) {
-          tabCategorie.push(musique['Categorie']);
-        } else {
-          tabCategorie.forEach(function (categorie) {
-            console.log('test');
-            if (categorie.search(musique['Categorie']) == -1) {
-              console.log('ok');
-              tabCategorie.push(musique['Categorie']);
-            }
-          })
+
+        var present = false;
+        for (var i = 0; i < tabCategorie.length && !present; i++) {
+          if (tabCategorie[i].search(musique['Categorie']) > -1) {
+            present = true;
+          }
         }
+        if (!present) {
+          tabCategorie.push(musique['Categorie']);
+          listeCategorie.insertAdjacentHTML('beforeend', '<p class="categorie">'+musique['Categorie']+'</p>');
+        }
+
         sousDivPrincipale.appendChild(categorie);
         divPrincipale.appendChild(sousDivPrincipale);
         section.appendChild(divPrincipale);
