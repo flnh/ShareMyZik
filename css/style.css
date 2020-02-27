@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Regular.ttf');
+}
+
+* {
+  font-family: 'Roboto';
+}
+
 @media (min-width: 600px) and (min-height: 600px) {
   #eltAjouter #formAjouter {
     width: 600px;
@@ -100,11 +109,11 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 label {
@@ -463,4 +472,23 @@ section > div > div > p:nth-child(2) {
 
 #blocMenu #listeCategorie.menuOuvert {
   opacity: 1;
+}
+
+/* ----------------------------------------------------- */
+/* --------------------- SCROLLBAR --------------------- */
+/* ----------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #444444; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #ED1C24; 
+  border-radius: 10px;
 }
